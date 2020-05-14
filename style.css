@@ -1,37 +1,49 @@
-/* Global elemnt styling */
+/* put logo and search form in the center and style it */
 
-* {
-    font-family: Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
+.logo {
+    text-align: center;
 }
 
-li {
-    list-style: none;
+.logo > img {
+    width: 300px;
 }
 
-a {
-    text-decoration: none;
+.search {
+   text-align: center;
+   width: 600px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
-a:hover {
-    text-decoration: underline;
-
+#search-bar {
+    background: url(https://image.flaticon.com/icons/svg/483/483356.svg) no-repeat left 15px center;
+    background-size: 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 20px 0;
+    box-sizing: border-box;
+    padding-left: 60px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    font-size: 1.3em;
 }
 
-/* specific styling */
-
-nav {
-    background-color: lightblue;
-    height: 5 vh;
+#search-bar:hover {
+    box-shadow: 0 0 10px lightgray;
+    scale: 1.01;
 }
 
-main {
-    background-color: lightcoral;
-    height: 75vh;
+#search, #random {
+    background-color: #edeef2;
+    width: 150px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
-footer {
-    background-color: lightgray;
-    height: 20vh;
+ #search:hover, #random:hover {
+    border: 0.5px solid gray;
+    background: linear-gradient(white, lightgray opa)
 }
