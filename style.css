@@ -1,7 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
 /* put logo and search form in the center and style it */
 
 .logo {
     text-align: center;
+    margin-top: 15vh;
 }
 
 .logo > img {
@@ -24,7 +31,7 @@
     margin: 20px 0 20px 0;
     box-sizing: border-box;
     padding-left: 60px;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(180, 179, 179);
     border-radius: 30px;
     font-size: 1.3em;
 }
@@ -47,3 +54,76 @@
     border: 0.5px solid gray;
     background: linear-gradient(white, lightgray opa)
 }
+
+/*navbar*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+
+ul > li > input {
+    background-color: rgb(35, 152, 248);
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 2px;
+    border-width: 0;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* footer section */
+
+.lang {
+    width: 100%;
+    position: fixed;
+    bottom: 40px;
+    background-color: rgb(241, 240, 240);
+    border-top: 1px solid lightgray;
+    line-height: 40px;
+    padding: 0 15px 0 25px;
+    color: rgb(71, 71, 71);
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: rgb(241, 240, 240);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+
+footer > div {
+    padding: 0 15px 0 15px;
+    line-height: 40px;;
+}
+
